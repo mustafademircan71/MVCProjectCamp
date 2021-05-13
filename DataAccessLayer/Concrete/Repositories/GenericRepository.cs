@@ -25,7 +25,12 @@ namespace DataAccessLayer.Concrete.Repositories
             ctx.SaveChanges();
         }
 
-        public void Insert(T entity)
+        public T Get(Expression<Func<T, bool>> filter)
+        {
+            return _object.SingleOrDefault(filter);
+        }
+
+       public void Insert(T entity)
         {
             _object.Add(entity);
             ctx.SaveChanges();

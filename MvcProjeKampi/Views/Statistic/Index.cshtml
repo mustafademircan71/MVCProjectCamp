@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<div class="row">
+    <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-info">
+            <div class="inner">
+                <h3>@ViewBag.v1</h3>
+                <p style="font-size:20px;">Toplam Kategori Sayısı</p>
+            </div>
+        </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-success">
+            <div class="inner">
+                <h3>@ViewBag.v2</h3>
+                <p style="font-size:20px;">Yazılım Kategorisine ait Başlık Sayısı</p>
+            </div>
+        </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-warning">
+            <div class="inner">
+                <h3>@ViewBag.v3</h3>
+                <p style="font-size:20px;">İsminde "a" Harfi Geçen Yazarlar</p>
+            </div>
+        </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-danger">
+            <div class="inner">
+                <div class="inner">
+                    <h3>@ViewBag.v4</h3>
+                    <p style="font-size:20px;">En Fazla Başlığa Sahip Kategoriler</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-6">
+
+        <div class="small-box bg-dark">
+            <div class="inner">
+                <div class="inner">
+                    <h3>@ViewBag.v5</h3>
+                    <p style="font-size:20px;">Kategori Tablosunda durumu "True" olanlar ile "False" Olanlar Arasındaki Fark"</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
